@@ -9,6 +9,7 @@ import java.util.Locale;
 @RestController
 public class HelloController {
 
+    private final Logger logger = LoggerFactory.getLogger(HelloController.class);
     private final MessageSource messageSource;
 
     public HelloController(MessageSource messageSource) {
