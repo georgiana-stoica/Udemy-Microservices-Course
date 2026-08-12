@@ -5,12 +5,14 @@ import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
 @AllArgsConstructor
 @Setter
 @Getter
+@NoArgsConstructor
 public class User {
 
     private Integer id;
@@ -19,6 +21,6 @@ public class User {
     private String name;
 
     @Past
-    private LocalDate birthday;
+    private LocalDate birthDate;
 
 }
